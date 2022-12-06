@@ -2,6 +2,7 @@ import {
   Box,
   Button,
   DialogActions,
+  Select,
   TextField,
   Typography,
 } from "@mui/material";
@@ -23,10 +24,14 @@ export default function Withdraw() {
           <Typography variant="h5" sx={{ mb: 1 }}>
             Enter Withdraw Amount
           </Typography>
-          <TextField
+         <Box>
+         
+         <TextField
             sx={{ width: "100%", border: "1px solid #959595",input: { color: '#B3B3B3' } }}
             placeholder="0000000"
+            type="number"
           />
+         </Box>
         </Box>
         <Box display="flex" justifyContent="right">
           <Typography variant="h6">Available : ₹5000 </Typography>

@@ -1,5 +1,7 @@
 import { Box, Button, DialogActions, TextField, Typography } from "@mui/material";
 import React from "react";
+import Select from '@mui/material/Select';
+import MenuItem from '@mui/material/MenuItem';
 
 export default function Margin() {
 
@@ -7,6 +9,11 @@ export default function Margin() {
 
   const handleClose = () => {
     setOpen(false);
+      };
+      const [age, setAge] = React.useState('');
+
+  const handleChange = (event) => {
+    setAge(event.target.value);
   };
   return (
     <>
@@ -14,9 +21,23 @@ export default function Margin() {
         <Typography variant="h3" sx={{ pb: 2.5 }}>
           Adjust Margin
         </Typography>
-        <Box>
+        <Box display="flex" sx={{border: "1px solid #959595"}}>
+        <Select
+          value={age}
+          onChange={handleChange}
+          displayEmpty
+          sx={{color:"#fff", borderRight: "1px solid #959595"}}
+          inputProps={{ 'aria-label': 'Without label' }}
+        >
+          <MenuItem value="">
+            <em>Add</em>
+          </MenuItem>
+          <MenuItem value={10}>Ten</MenuItem>
+          <MenuItem value={20}>Twenty</MenuItem>
+          <MenuItem value={30}>Thirty</MenuItem>
+        </Select>
           <TextField
-            sx={{ width: "100%", border: "1px solid #959595",input: { color: '#B3B3B3' } }}
+            sx={{ width: "100%",input: { color: '#B3B3B3' } }}
             placeholder="000000000"
           />
         </Box>
