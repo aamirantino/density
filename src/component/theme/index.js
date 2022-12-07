@@ -8,7 +8,7 @@ const theme = createTheme({
       secondary: "#fcfcfc",
     },
     primary: {
-      main: "#655AD6",
+      main: "#1F1F24",
       contrastText: "#ffffff",
     },
     text: {
@@ -116,10 +116,10 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           background: "rgba(101, 90, 214, 0.08)",
-          border: "1px solid #655AD6",
-          color: "#655AD6",
+          border: "1px solid #1F1F24",
+          color: "#1F1F24",
           "& .MuiChip-deleteIcon": {
-            color: "#655AD6",
+            color: "#1F1F24",
           },
         },
       },

@@ -63,11 +63,11 @@ export default function VerticalStepper({ activeStep }) {
             key={step.label}
             sx={{
               "& .MuiStepLabel-root .Mui-completed": {
-                color: "#1F1F24", // circle color (COMPLETED)
+                color: "primary.main", // circle color (COMPLETED)
               },
               "& .MuiStepLabel-label.Mui-completed.MuiStepLabel-alternativeLabel":
                 {
-                  color: "#1F1F24", // Just text label (COMPLETED)
+                  color: "primary.main", // Just text label (COMPLETED)
                 },
               "& .MuiStepLabel-root .Mui-active": {
                 color: "secondary.main", // circle color (ACTIVE)

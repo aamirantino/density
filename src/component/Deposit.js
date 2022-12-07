@@ -16,12 +16,12 @@ export default function Deposit() {
   return (
     <>
       <Box
-        style={{
+        sx={{
           marginRight: "auto",
           marginLeft: "auto",
           border: "1px solid rgba(192,23,44,0.5)",
           padding: "20px",
-          backgroundColor: "#1F1F24",
+          backgroundColor: "primary.main",
         }}
       >
         <Typography variant="h3" id="alert-dialog-title" sx={{ mb: 2 }}>

@@ -11,7 +11,7 @@ import React from "react";
 export default function Withdraw() {
   return (
     <>
-      <Box sx={{ backgroundColor: "#1F1F24", pt: 3, pl: 3, pr: 3 }}>
+      <Box sx={{ backgroundColor: "primary.main", pt: 3, pl: 3, pr: 3 }}>
         <Typography variant="h3" sx={{ mb: 2.5 }}>
           Withdraw INR
         </Typography>
