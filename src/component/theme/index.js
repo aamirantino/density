@@ -1,14 +1,12 @@
 import { createTheme } from "@mui/material";
 
-
-
 const theme = createTheme({
   palette: {
     background: {
       default: "#f4f6f8",
       paper: "#ffffff",
       secondary: "#fcfcfc",
-    } ,
+    },
     primary: {
       main: "#655AD6",
       contrastText: "#ffffff",
@@ -33,22 +31,20 @@ const theme = createTheme({
       fontSize: "2.25rem",
       letterSpacing: "-0.24px",
       lineHeight: "2.5rem",
-      color: "#fff"
+      color: "#fff",
     },
     h2: {
       fontWeight: 600,
       fontSize: "2rem",
       letterSpacing: "-0.24px",
       lineHeight: "2.25rem",
-      
     },
     h3: {
       fontWeight: 600,
       fontSize: "1.5rem",
       letterSpacing: "-0.06px",
       lineHeight: "1.75rem",
-      color: "#fff"
-
+      color: "#fff",
     },
     h4: {
       fontWeight: 600,
@@ -56,7 +52,6 @@ const theme = createTheme({
       letterSpacing: "-0.06px",
       lineHeight: "1.5rem",
       color: "#fff",
-
     },
     h5: {
       fontWeight: 400,
@@ -96,9 +91,9 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: "0px",
-          backgroundColor:"#2C2C34",
-          width:"194px",
-          color:"#fff",
+          backgroundColor: "#2C2C34",
+          width: "194px",
+          color: "#fff",
           textTransform: "capitalize",
         },
         outlined: {
@@ -112,8 +107,7 @@ const theme = createTheme({
           "& .MuiFilledInput-input": {
             paddingTop: "10px",
             background: "#F3F4F5",
-            width:"100%"
-          
+            width: "100%",
           },
         },
       },

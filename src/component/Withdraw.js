@@ -9,11 +9,6 @@ import {
 import React from "react";
 
 export default function Withdraw() {
-  const [open, setOpen] = React.useState(true);
-
-  const handleClose = () => {
-    setOpen(false);
-  };
   return (
     <>
       <Box sx={{ backgroundColor: "#1F1F24", pt: 3, pl: 3, pr: 3 }}>
@@ -24,14 +19,17 @@ export default function Withdraw() {
           <Typography variant="h5" sx={{ mb: 1 }}>
             Enter Withdraw Amount
           </Typography>
-         <Box>
-         
-         <TextField
-            sx={{ width: "100%", border: "1px solid #959595",input: { color: '#B3B3B3' } }}
-            placeholder="0000000"
-            type="number"
-          />
-         </Box>
+          <Box>
+            <TextField
+              sx={{
+                width: "100%",
+                border: "1px solid #959595",
+                input: { color: "#B3B3B3" },
+              }}
+              placeholder="0000000"
+              type="number"
+            />
+          </Box>
         </Box>
         <Box display="flex" justifyContent="right">
           <Typography variant="h6">Available : ₹5000 </Typography>
@@ -51,13 +49,19 @@ export default function Withdraw() {
         </Box>
       </Box>
       <DialogActions sx={{ backgroundColor: "#2C2C34" }}>
-        <Button style={{ backgroundColor: 'transparent',border:'1px solid #909090' }} variant="outlined" onClick={handleClose} autoFocus>
+        <Button
+          sx={{
+            backgroundColor: "transparent",
+            border: "1px solid #909090",
+          }}
+          variant="outlined"
+          autoFocus
+        >
           Cancel
         </Button>
         <Button
           variant="outlined"
-          style={{ backgroundColor: '#fff',color:"#2C2C34" }}
-          onClick={handleClose}
+          sx={{ backgroundColor: "#fff", color: "#2C2C34" }}
         >
           Deposit
         </Button>
